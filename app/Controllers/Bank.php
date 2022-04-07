@@ -12,6 +12,10 @@ class Bank extends BaseController
 
     public function deposit(){
        
+        if (!logged_in())
+        {
+            return redirect()->route('login');
+        }
         $price = $this->request->getPost("amount");
         
         
@@ -42,6 +46,9 @@ class Bank extends BaseController
     }
 
     public function widthdraw(){
-        
+        if (!logged_in())
+        {
+            return redirect()->route('login');
+        }
     }
 }
