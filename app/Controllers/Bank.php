@@ -29,7 +29,7 @@ class Bank extends BaseController
         ];
 
         $arv = [
-            "name" => "Update VIP",
+            "name" => "Deposit",
             "cost" => $total,
             "discord" => $discord,
             "discordline" => $discordLine,
