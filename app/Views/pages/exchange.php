@@ -241,9 +241,9 @@ function getData() {
                         <td class="sell<?php echo $item->symbol;?>">--</td>
                         <td class="sell<?php echo $item->symbol;?>_vnd">--</td>
                         <td class="sell<?php echo $item->symbol;?>_kwr">--</td>
-                        <td class="text-right">
-                            <button class="btn btn-sm btn-primary" type="button">Buy Now</button>
-                            <button class="btn btn-sm btn-primary" type="button">Sell Now</button>
+                        <td class="text-end">
+                            <a class="btn btn-sm btn-primary" href="/exchange/buy/<?php echo $item->symbol;?>">Buy Now</a>
+                            <a class="btn btn-sm btn-primary" href="/exchange/sell/<?php echo $item->symbol;?>">Sell Now</a>
                         </td>
 
                     </tr>
@@ -264,7 +264,7 @@ function getData() {
                 </div>
                 <div class="col-md-6 d-flex justify-content-end align-items-center">
                   <i class="far fa-calendar-alt me-2"></i>
-                  <small><?php echo date('m-d-y h:i:s A');?></small>
+                  <small><?php echo date('M-d-Y');?></small>
                 </div>
               </div>
             </div>
@@ -276,12 +276,12 @@ function getData() {
                   <div class="d-flex align-items-center">
                     <button class="btn btn-icon-only btn-rounded btn-outline-<?php echo $item->type == "buy" ? "info" : "danger";?> mb-0 me-3 btn-sm d-flex align-items-center justify-content-center"><i class="fas fa-arrow-<?php echo $item->type == "buy" ? "up" : "down";?>"></i></button>
                     <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm"><?php echo $item->symbol;?> <?php echo $item->type;?> [Open : <?php echo $item->open;?> - Sl : <?php echo $item->sl;?> - Close : <?php echo $item->close_at;?>]</h6>
-                      <span class="text-xs"><?php echo date("d-m h:i A",$item->opentime);?> - <?php echo date("d-m h:i A",$item->close_time);?></span>
+                      <h6 class="mb-1 text-dark text-sm">Vo khoa <?php echo $item->type;?> <?php echo $item->volume;?> <?php echo $item->symbol;?> </h6>
+                      <span class="text-xs"><?php echo date("d-m h:i A",$item->opentime);?></span>
                     </div>
                   </div>
                   <div class="d-flex align-items-center text-<?php echo $item->profit_pip > 0 ? "info text-gradient " : ($item->profit_pip < 0 ? "danger text-gradient " : "secondary");?> text-sm font-weight-bold">
-                    <?php echo $item->profit_pip > 0 ? "+" : ($item->profit_pip < 0 ? "" : ":");?> <?php echo $item->profit_pip;?> pip(s)
+                    Hoàn tất
                   </div>
                 </li>
                 <?php } ?>

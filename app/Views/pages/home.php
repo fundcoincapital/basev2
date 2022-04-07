@@ -1,7 +1,7 @@
 <?= $this->extend("App\Views\home") ?>
 <?= $this->section('main') ?>
   <?= $this->section('javascript') ?>
-  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script src="/assets/js/plugins/chartjs.min.js"></script>
        <script>
     var ctx1 = document.getElementById("chart-line").getContext("2d");
 
@@ -94,7 +94,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">BTC</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
                     <h5 class="font-weight-bolder">
                       $53,000
                     </h5>
@@ -119,7 +119,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">ETH</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
                     <h5 class="font-weight-bolder">
                       2,300
                     </h5>
@@ -144,7 +144,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Khách hàng</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
                     <h5 class="font-weight-bolder">
                       +3,462
                     </h5>
@@ -169,7 +169,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Giao dịch</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
                     <h5 class="font-weight-bolder">
                       $103,430
                     </h5>
@@ -192,7 +192,7 @@
         <div class="col-lg-7 mb-lg-0 mb-4">
           <div class="card z-index-2 h-100">
             <div class="card-header pb-0 pt-3 bg-transparent">
-              <h6 class="text-capitalize">Biến động thị trường</h6>
+              <h6 class="text-capitalize">Sales overview</h6>
               <p class="text-sm mb-0">
                 <i class="fa fa-arrow-up text-success"></i>
                 <span class="font-weight-bold">4% more</span> in 2021
@@ -257,7 +257,7 @@
           <div class="card ">
             <div class="card-header pb-0 p-3">
               <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Mã giao dịch nổi bật</h6>
+                <h6 class="mb-2">Sales by Country</h6>
               </div>
             </div>
             <div class="table-responsive">
@@ -267,7 +267,7 @@
                     <td class="w-30">
                       <div class="d-flex px-2 py-1 align-items-center">
                         <div>
-                          <img src="./assets/img/icons/flags/US.png" alt="Country flag">
+                          <img src="/assets/img/icons/flags/US.png" alt="Country flag">
                         </div>
                         <div class="ms-4">
                           <p class="text-xs font-weight-bold mb-0">Country:</p>
@@ -395,7 +395,7 @@
         <div class="col-lg-5">
           <div class="card">
             <div class="card-header pb-0 p-3">
-              <h6 class="mb-0">Tin tức</h6>
+              <h6 class="mb-0">Categories</h6>
             </div>
             <div class="card-body p-3">
               <ul class="list-group">
