@@ -50,5 +50,5 @@ class Bank extends BaseController
         {
             return redirect()->route('login');
         }
-    }
+    }2
 }

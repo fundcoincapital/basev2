@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://sonataruby.dev';
+    public $baseURL = 'http://fundcoincapital.dev';
     public $socketio = "http://localhost:3000";
 
     /**
@@ -70,7 +70,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $defaultLocale = 'en';
+    public $defaultLocale = 'vn';
 
     /**
      * --------------------------------------------------------------------------
@@ -97,7 +97,7 @@ class App extends BaseConfig
      *
      * @var string[]
      */
-    public $supportedLocales = ['en'];
+    public $supportedLocales = ['vn','en'];
 
     /**
      * --------------------------------------------------------------------------
